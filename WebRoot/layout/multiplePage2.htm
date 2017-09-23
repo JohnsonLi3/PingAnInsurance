@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>多内容布局</title>
+    <link rel="stylesheet" href="../css/ui.css" type="text/css" />
+    <link type="text/css" rel="Stylesheet" href="../css/tabs.css" />
+    <link type="text/css" rel="Stylesheet" href="../css/datepicker.css" />
+
+    <script language="javascript" type="text/javascript" src="../js/jQuery1.3.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-ui-1.7.1.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/pa_ui.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/ui.js"></script>
+
+</head>
+<body class="page">
+    <div class="sitemappath">
+        当前位置： <span class="root parent"><a href="javascript:void(0)">首页</a> </span><span
+            class="separator">>></span> <span class="current"><a href="#">多内容布局</a></span>
+    </div>
+    <div class="title2 left">
+        <!--class="left"居左-->
+        核保数据维护 编号：OP13256441
+    </div>
+    <div class="right">
+        <!--class="right"居右-->
+        编号：OP13256441
+    </div>
+    <!--多个不同的区域有<div class="margin"></div>作为外部容器-->
+    <div class="margin">
+        <!--列表table长度均为100%-->
+        <table class="table_list">
+            <thead>
+                <tr>
+                    <th>
+                        员工编号</th>
+                    <th>
+                        姓 名</th>
+                    <th>
+                        考核岗位</th>
+                    <th>
+                        当月实际工作日</th>
+                    <th>
+                        操作差错件数</th>
+                    <th>
+                        成品差错件数</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        E00010016405</td>
+                    <td>
+                        刘艳</td>
+                    <td>
+                        <input type="text" value="考核岗" /></td>
+                    <td>
+                        <input type="text" value="22" /></td>
+                    <td>
+                        <input type="text" value="2" /></td>
+                    <td>
+                        <input type="text" value="1" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="margin">
+        <table class="table_list">
+            <thead>
+                <tr>
+                    <th>
+                        事中质检+事后审计发现有效的异常案件量</th>
+                    <th>
+                        事中质检+事后审计案件总量</th>
+                    <th>
+                        主管考评得分</th>
+                    <th>
+                        系统外作业标准量</th>
+                    <th>
+                        运营支持人员排名</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" value="1" /></td>
+                    <td>
+                        <input type="text" value="1" /></td>
+                    <td>
+                        <input type="text" value="50" /></td>
+                    <td>
+                        <input type="text" value="120" /></td>
+                    <td>
+                        <input type="text" value="10" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="textcenter margin">
+        <input type="button" id="saveId" value="确 定" class="button btn_xs" />
+    </div>
+</body>
+</html>

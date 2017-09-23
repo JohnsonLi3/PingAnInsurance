@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.prj.dao.announcementDao">
+<insert id="insert" parameterType="announcement">
+insert into 
+announcement(infortitle,information,inforcomment,starttime,pastdue) values(#{infortitle},#{information},#{inforcomment},#{starttime},#{pastdue})
+</insert>
+
+<select id="findByIt" parameterType="String" resultType="announcement">
+select*from
+announcement
+where infortitle = #{infortitle}
+</select>
+
+<select id="findByItup" parameterType="String" resultType="announcement">
+select*from
+announcement
+where infortitle = #{infortitle}
+</select>
+
+<select id="findAll" resultType="announcement">
+select*from announcement
+</select>
+
+<update id="update" parameterType="announcement">
+update announcement set
+information= #{information},inforcomment= #{inforcomment},starttime= #{starttime},pastdue= #{pastdue}
+where infortitle = #{infortitle}
+</update>
+</mapper>

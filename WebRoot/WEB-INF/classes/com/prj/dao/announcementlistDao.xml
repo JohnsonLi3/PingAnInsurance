@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.prj.dao.announcementlistDao">
+	<select id="findAll"  resultType="announcementlist">
+		select*from announcementlist
+		<trim prefix="where" prefixOverrides="and|or">
+		<if test="infortitle !=null and infortitle != '' ">
+			and infortitle = #{infortitle}
+		</if>
+
+		<if test="annostatus != null and annostatus !='' ">
+			and annostatus = #{annostatus}
+		</if>
+		</trim>
+	</select>
+	
+	<delete id="delByAnnolistId" parameterType="int"  >
+	 delete from announcementlist where annolistid = #{annolistid}
+	</delete>
+
+</mapper>

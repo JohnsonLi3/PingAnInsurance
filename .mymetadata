@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="PingAnInsurance"
+  id="myeclipse.1503429977643"
+  context-root="/PingAnInsurance"
+  j2ee-spec="5.0"
+  archive="PingAnInsurance.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

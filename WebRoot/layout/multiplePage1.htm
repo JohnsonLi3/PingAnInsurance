@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>多内容布局</title>
+    <link rel="stylesheet" href="../css/ui.css" type="text/css" />
+    <link type="text/css" rel="Stylesheet" href="../css/tabs.css" />
+    <link type="text/css" rel="Stylesheet" href="../css/datepicker.css" />
+
+    <script language="javascript" type="text/javascript" src="../js/jQuery1.3.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-ui-1.7.1.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/pa_ui.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/ui.js"></script>
+
+</head>
+<body class="page">
+    <div class="sitemappath">
+        当前位置： <span class="root parent"><a href="javascript:void(0)">首页</a> </span><span
+            class="separator">>></span> <span class="current"><a href="#">多内容布局</a></span>
+    </div>
+    <div class="formcontent">
+        <form id="searchform" action="" method="post">
+            <!--多个不同的区域有<div class="margin"></div>作为外部容器-->
+            <div class="margin">
+                <table class="table_list">
+                    <caption>
+                        单价收费：
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th width="8%">
+                                1月</th>
+                            <th width="8%">
+                                2月</th>
+                            <th width="8%">
+                                3月</th>
+                            <th width="8%">
+                                4月</th>
+                            <th width="8%">
+                                5月</th>
+                            <th width="8%">
+                                6月</th>
+                            <th width="8%">
+                                7月</th>
+                            <th width="8%">
+                                8月</th>
+                            <th width="8%">
+                                9月</th>
+                            <th width="8%">
+                                10月</th>
+                            <th width="8%">
+                                11月</th>
+                            <th width="8%">
+                                12月</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text1" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text2" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text3" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text4" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text5" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text6" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text7" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text8" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text9" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text10" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text11" size="13" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="margin">
+                <table class="table_list">
+                    <tbody>
+                        <tr>
+                            <td width="8%" align="right">
+                                作业量单位</td>
+                            <td width="13%" >
+                                <input type="text" id="Text12" size="16" /></td>
+                            <td width="8%" align="right">
+                                收费档位区间</td>
+                            <td>
+                                <select id="Select1">
+                                    <option>请选择</option>
+                                    <option>年度</option>
+                                    <option>半年度</option>
+                                    <option>季度</option>
+                                    <option>月度</option>
+                                </select>
+                            </td>
+                            <td width="6%" align="right">
+                                区间系数</td>
+                            <td width="27%" >
+                                <input type="checkbox" id="Checkbox1" value="0" />保底系数
+                                <input type="checkbox" id="Checkbox2" value="1" />高档系数
+                            </td>
+                            <td width="8%" align="right">
+                                收费档位区间</td>
+                            <td>
+                                <select id="Select2">
+                                    <option>请选择</option>
+                                    <option>全年区间系数一致</option>
+                                    <option>自定义</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="margin">
+                收费档位区间</div>
+            <div class="margin">
+                <table class="table_list">
+                    <thead>
+                        <tr>
+                            <th width="20%">
+                            </th>
+                            <th width="20%">
+                                1季度</th>
+                            <th width="20%">
+                                2季度</th>
+                            <th width="20%">
+                                3季度</th>
+                            <th width="20%">
+                                4季度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                保底系数</td>
+                            <td>
+                                <input type="text" id="Text13" /></td>
+                            <td>
+                                <input type="text" id="Text14" /></td>
+                            <td>
+                                <input type="text" id="Text15" /></td>
+                            <td>
+                                <input type="text" id="Text16" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                高档系数</td>
+                            <td>
+                                <input type="text" id="Text17" /></td>
+                            <td>
+                                <input type="text" id="Text18" /></td>
+                            <td>
+                                <input type="text" id="Text19" /></td>
+                            <td>
+                                <input type="text" id="Text20" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="margin">
+                <table class="table_list">
+                    <caption>
+                        专项收费：
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th width="8%">
+                                1月</th>
+                            <th width="8%">
+                                2月</th>
+                            <th width="8%">
+                                3月</th>
+                            <th width="8%">
+                                4月</th>
+                            <th width="8%">
+                                5月</th>
+                            <th width="8%">
+                                6月</th>
+                            <th width="8%">
+                                7月</th>
+                            <th width="8%">
+                                8月</th>
+                            <th width="8%">
+                                9月</th>
+                            <th width="8%">
+                                10月</th>
+                            <th width="8%">
+                                11月</th>
+                            <th width="8%">
+                                12月</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="Text21" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text22" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text23" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text24" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text25" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text26" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text27" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text28" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text29" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text30" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text31" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text32" size="13" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="margin">
+                <table class="table_list">
+                    <tr>
+                        <td width="8%" align="right">
+                            作业量单位</td>
+                        <td colspan="7" >
+                            <input type="text" id="Text33" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="margin">
+                追加收费区间</div>
+            <div class="margin">
+                <table class="table_list">
+                    <thead>
+                        <tr>
+                            <th width="20%">
+                            </th>
+                            <th width="20%">
+                                追加收费区间系数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                区间下限</td>
+                            <td>
+                                <input type="text" id="Text34" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                区间上限</td>
+                            <td>
+                                <input type="text" id="Text35" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="margin">
+                <table class="table_list">
+                    <caption>
+                        包干制收费：
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th width="8%">
+                                1月</th>
+                            <th width="8%">
+                                2月</th>
+                            <th width="8%">
+                                3月</th>
+                            <th width="8%">
+                                4月</th>
+                            <th width="8%">
+                                5月</th>
+                            <th width="8%">
+                                6月</th>
+                            <th width="8%">
+                                7月</th>
+                            <th width="8%">
+                                8月</th>
+                            <th width="8%">
+                                9月</th>
+                            <th width="8%">
+                                10月</th>
+                            <th width="8%">
+                                11月</th>
+                            <th width="8%">
+                                12月</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="text" id="Text36" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text37" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text38" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text39" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text40" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text41" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text42" size="13" /></td>
+                            <td>
+                                <input type="text" id="Text43" size="13" /></td>
+                            <td>
+                                <input type="text" id="" size="13" /></td>
+                            <td>
+                                <input type="text" id="" size="13" /></td>
+                            <td>
+                                <input type="text" id="" size="13" /></td>
+                            <td>
+                                <input type="text" id="" size="13" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="textcenter margin">
+                <input type="button" id="saveId" value="保  存" class="button btn_xs" />
+                <input type="reset" id="backId" value="重  置" class="button btn_xs" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

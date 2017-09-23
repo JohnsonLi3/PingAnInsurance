@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.prj.dao.detailinforDao">
+	<insert id="insert" parameterType="detailinfor">
+		insert into detailinfor (number,detailname,actualvalue,sequenceno,description) values
+		(#{number},#{detailname},#{actualvalue},#{sequenceno},#{description})
+	</insert>
+
+	<select id="findBySbid" parameterType="int" resultType="detailinfor">
+		select*from detailinfor
+		where
+		sbid = #{sbid}
+	</select>
+
+	<select id="findBySbidforupdate" parameterType="int" resultType="detailinfor">
+		select*from detailinfor
+		where
+		sbid = #{sbid}
+	</select>
+
+	<select id="findAll" resultType="detailinfor">
+		select*from detailinfor
+	</select>
+
+	<update id="update" parameterType="detailinfor">
+		update detailinfor 
+		set 
+		number = #{number}, detailname = #{detailname},
+		actualvalue = #{actualvalue},sequenceno = #{sequenceno},description =
+		#{description}
+		where sbid = #{sbid}
+	</update>
+
+	<delete id="delBySbid" parameterType="int">
+		delete from detailinfor
+		where
+		sbid = #{sbid}
+	</delete>
+	
+	</mapper>
